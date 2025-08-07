@@ -13,7 +13,13 @@ from getpass import getpass
 def signin(imgur_driver, username, password):
     '''
     Handles signin
-    TODO: finish this docstring
+    
+    Args:
+        imgur_driver (Driver object): Firefox session
+        username (str): user-input Imgur username
+        password (str): user-input Imgur password
+        
+    Return: None
     '''
 
     imgur_signin_url = "https://imgur.com/signin#%2F"
@@ -32,10 +38,14 @@ def signin(imgur_driver, username, password):
     print("Sign-in successful")
         
         
-def upload(imgur_driver, username):
+def upload(imgur_driver):
     '''
     Uploads photo
-    TODO: finish this docstring
+    
+    Args:
+        imgur_driver ():
+        
+    Return: None
     '''
 
     upload_url = "https://imgur.com/upload"
@@ -59,7 +69,10 @@ def upload(imgur_driver, username):
 def main():
     '''
     Main program flow, calls specific functions in sequence.
-    TODO: finish this docstring
+    
+    Args: None
+    
+    Return: None
     '''
     
     username = input("Please enter your username: ")
